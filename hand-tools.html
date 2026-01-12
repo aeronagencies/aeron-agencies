@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hand Tools | Aeron Agencies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent1: #ff4500;
+      --accent2: #ff6a00;
+      --text: #222;
+      --muted: #666;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; font-family:'Inter',sans-serif; }
+    body { background:#fff; color: var(--text); line-height:1.6; }
+    header {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: #fff;
+      text-align:center;
+      padding: 24px 0;
+      font-size: 28px;
+      font-weight:700;
+    }
+    nav {
+      background:#fff;
+      text-align:center;
+      padding:12px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+    nav ul { list-style:none; display:inline-flex; gap:24px; }
+    nav ul li a {
+      text-decoration:none;
+      color:#000;
+      font-weight:600;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: var(--accent1); }
+    .container { max-width:1100px; margin:40px auto; padding:0 20px; }
+    h1 { color: var(--accent1); text-align:center; margin-bottom:20px; }
+    h2 { color: var(--accent2); text-align:center; margin-top:40px; margin-bottom:12px; }
+    .intro { text-align:center; color: var(--muted); margin-bottom:30px; }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:22px;
+      margin-top:20px;
+    }
+    .tool-card {
+      background:#fafafa;
+      border-radius:12px;
+      overflow:hidden;
+      text-align:center;
+      padding-bottom:20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #eee;
+    }
+    .tool-card img {
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-bottom:3px solid var(--accent1);
+    }
+    .tool-card h3 {
+      margin:16px 0 8px;
+      font-size:18px;
+      color: var(--text);
+    }
+    .tool-card p {
+      padding:0 16px;
+      color: var(--muted);
+      font-size:15px;
+    }
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: #fff;
+    }
+    .tool-card:hover h3, .tool-card:hover p {
+      color: #fff;
+    }
+    footer {
+      text-align:center;
+      padding:20px 0;
+      background:#f5f5f5;
+      color:#777;
+      margin-top:40px;
+    }
+	/* Dropdown Menu Styling */
+	nav ul li {
+	  position: relative;
+	}
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  background: white;
+	  min-width: 220px;
+	  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	  border-radius: 8px;
+	  z-index: 100;
+	}
+	.dropdown-content a {
+	  display: block;
+	  padding: 10px 16px;
+	  color: #333;
+	  text-align: left;
+	  text-decoration: none;
+	  font-weight: 500;
+	  transition: background 0.3s;
+	}
+	.dropdown-content a:hover {
+	  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+	  color: white;
+	}
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+  </style>
+</head>
+<body>
+  <header>Aeron Agencies</header>
+  <nav>
+  <ul>
+    <li><a href="aeronagencies.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+   
+   
+    <li class="dropdown">
+      <a href="#">Products ▼</a>
+      <div class="dropdown-content">
+        <a href="industrial-paints.html">Industrial Paints</a>
+			<a href="cutting-tools.html">Cutting Tools</a>
+			<a href="hand-tools.html">Hand Tools</a>
+			<a href="magnetic-drill.html">Magnetic Drill Machines</a>
+			<a href="annular-cutters.html">TCT Annular Cutters</a>
+			<a href="decorative-paints.html">Decorative Paints</a>
+			<a href="old-cloth.html">Old Cloth</a>
+			<a href="safety-equipments.html">Safety Equipments</a>
+      </div>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <div class="container">
+    <h1>Hand Tools</h1>
+    <p class="intro">
+      At Aeron Agencies, we supply quality hand tools built for precision, durability and performance across multiple industries. Trusted brands, robust designs and extensive variety form our core offering.
+    </p>
+
+    <h2>Our Hand Tool Range</h2>
+    <div class="tool-grid">
+      <div class="tool-card">
+        <img src="images/spanners.jpg" alt="Wrenches & Spanners">
+        <h3>Wrenches & Spanners</h3>
+        <p>High-precision spanners and adjustable wrenches manufactured to global standards for industrial maintenance.</p>
+      </div>
+      <div class="tool-card">
+        <img src="images/screwdrivers.png" alt="Plumbing Tools">
+        <h3>Screwdrivers & Bit Sets</h3>
+        <p>Ergonomic handle screwdrivers, magnetic bits and sets for fast, safe assembly and repair work.</p>
+      </div>
+      <div class="tool-card">
+        <img src="images/plier.jpg" alt="Cutters & Pliers">
+        <h3>Cutters & Pliers</h3>
+        <p>Durable steel-forged cutters and pliers designed for heavy-duty and precision cutting operations.</p>
+      </div>
+      <div class="tool-card">
+        <img src="images/sockets.jpg" alt="Ratchets & Sockets">
+        <h3>Ratchets & Socket Sets</h3>
+        <p>Comprehensive socket kits, ratchets and extensions that meet industrial torque and access requirements.</p>
+      </div>
+    </div>
+
+    <h2>Why Choose Our Hand Tools?</h2>
+    <p>
+      Our hand tools are engineered for longevity, accuracy and safety — made from premium materials, backed by trusted brands and supported with spare parts and warranty. Whether you're working in maintenance, production or repair, you’ll get tools built to last.  
+    </p>
+  </div>
+
+  <footer>© 2025 Aeron Agencies. All Rights Reserved.</footer>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Decorative Paints | Aeron Agencies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent1: #ff4500;
+      --accent2: #ff6a00;
+      --text: #222;
+      --muted: #666;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; font-family:'Inter',sans-serif; }
+    body { background:#fff; color:var(--text); line-height:1.6; }
+    header {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+      text-align: center;
+      padding: 24px 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    nav {
+      background:#fff;
+      text-align:center;
+      padding:12px 0;
+      box-shadow:0 2px 5px rgba(0,0,0,0.08);
+    }
+    nav ul {
+      list-style:none;
+      display:inline-flex;
+      gap:24px;
+    }
+    nav ul li a {
+      text-decoration:none;
+      color:#000;
+      font-weight:600;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: var(--accent1);
+    }
+    .container {
+      max-width:1100px;
+      margin:40px auto;
+      padding:0 20px;
+    }
+    h1 {
+      color: var(--accent1);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: var(--accent2);
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    p.intro {
+      text-align:center;
+      color: var(--muted);
+      margin-bottom:30px;
+    }
+    .feature-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:22px;
+      margin-top:20px;
+    }
+    .feature-card {
+      background:#fafafa;
+      border:1px solid #eee;
+      border-radius: var(--radius);
+      overflow:hidden;
+      text-align:center;
+      padding-bottom:20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card img {
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-bottom:3px solid var(--accent1);
+    }
+    .feature-card h3 {
+      margin:16px 0 8px;
+      font-size:18px;
+      color: var(--text);
+    }
+    .feature-card p {
+      padding:0 16px;
+      color: var(--muted);
+      font-size:15px;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+    }
+    .feature-card:hover h3,
+    .feature-card:hover p {
+      color: white;
+    }
+    footer {
+      text-align:center;
+      padding:20px 0;
+      background:#f5f5f5;
+      color:#777;
+      margin-top:40px;
+    }
+		/* Dropdown Menu Styling */
+	nav ul li {
+	  position: relative;
+	}
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  background: white;
+	  min-width: 220px;
+	  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	  border-radius: 8px;
+	  z-index: 100;
+	}
+	.dropdown-content a {
+	  display: block;
+	  padding: 10px 16px;
+	  color: #333;
+	  text-align: left;
+	  text-decoration: none;
+	  font-weight: 500;
+	  transition: background 0.3s;
+	}
+	.dropdown-content a:hover {
+	  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+	  color: white;
+	}
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+
+  </style>
+</head>
+<body>
+
+  <header>Aeron Agencies</header>
+  <nav>
+  <ul>
+    <li><a href="aeronagencies.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+  
+   
+    <li class="dropdown">
+      <a href="#">Products ▼</a>
+      <div class="dropdown-content">
+        <a href="industrial-paints.html">Industrial Paints</a>
+			<a href="cutting-tools.html">Cutting Tools</a>
+			<a href="hand-tools.html">Hand Tools</a>
+			<a href="magnetic-drill.html">Magnetic Drill Machines</a>
+			<a href="annular-cutters.html">TCT Annular Cutters</a>
+			<a href="decorative-paints.html">Decorative Paints</a>
+			<a href="old-cloth.html">Old Cloth</a>
+			<a href="safety-equipments.html">Safety Equipments</a>
+      </div>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <div class="container">
+    <h1>Decorative Paints</h1>
+    <p class="intro">
+      Transforming spaces with premium decorative paint solutions — inspired by design, engineered for durability.  
+      From interior finishes to exterior textures, Aeron Agencies brings you the finest in decorative coatings.
+    </p>
+
+    <h2>Interior & Exterior Finishes</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="images/interior.jpg" alt="Interior Wall Paints">
+        <h3>Interior Wall Paints</h3>
+        <p>Elegant emulsions with exceptional finish, washability and colour retention — ideal for living spaces, bedrooms and more.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/exteriorpaints.jpg" alt="Exterior Wall Paints">
+        <h3>Exterior Wall Paints</h3>
+        <p>Advanced exterior coatings that stand up to weather, sun and time — delivering lasting performance and vibrant look.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/texture.jpg" alt="Texture & Effect Finishes">
+        <h3>Texture & Effect Finishes</h3>
+        <p>Designer textures and finishes — 3D effects, metallics and unique surfaces that create bold visual impact.</p>
+      </div>
+    </div>
+
+    <h2>Why Choose Our Decorative Paints?</h2>
+    <p>
+      We partner with industry-leading brands, use high-performance formulations and support stylish, long-lasting finishes.  
+      Whether you are refreshing your home or enhancing commercial spaces, our decorative paint solutions cater to aesthetics and durability.
+    </p>
+  </div>
+
+  <footer>© 2025 Aeron Agencies. All Rights Reserved.</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- ===== OUR BRANDS CAROUSEL SECTION ===== -->
+<section class="brands-section">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="addison logo.jpg" alt="Addison"></div>
+      <div class="swiper-slide"><img src="asianpaintsppg.jpg" alt="Asian Paints PPG"></div>
+      <div class="swiper-slide"><img src="bds.jpg" alt="BDS Maschinen"></div>
+      <div class="swiper-slide"><img src="metdrill.jpg" alt="Metdrill"></div>
+      <div class="swiper-slide"><img src="venus.jpg" alt="Venus"></div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- ===== SWIPER STYLES ===== -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- ===== CUSTOM STYLES ===== -->
+<style>
+  .brands-section {
+    width: 100%;
+    background: linear-gradient(90deg, #ff4e00, #ec9f05);
+    padding: 60px 0;
+  }
+
+  .swiper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-slide img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+  }
+
+  .swiper-slide img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+  }
+</style>
+
+<!-- ===== SWIPER SCRIPT ===== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      600: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
