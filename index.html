@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<div>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aeron Agencies — Business Portfolio</title>
+  
+  <meta name="description" content="Aeron Agencies — Paints, Tools & Hardware." />
+  <meta name="keywords" content="Aeron Agencies, Industrial Paints, Cutting Tools, Hand Tools, Safety Equipments, Hardware, Yamuna Nagar">
+  <link rel="icon" type="image/png" href="aalogo.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</div>
+
+<!-- CSS -->
+  <style>
+  
+    :root
+	{
+      --bg:#fff;
+      --text:#222;
+      --accent1:#ff4500; /* orange-red */
+      --accent2:#ff6a00; /* lighter orange */
+      --muted:#666;
+      --radius:14px;
+      --container:1200px;
+	 <!-- background-image: url("C:/Users/Shubhi/Downloads/pawel-czerwinski-M40QnK-PXkI-unsplash.jpg");-->
+      font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+    }
+	
+    *{box-sizing:border-box}
+	
+    html,body
+	{
+	height:100%;
+	margin:0;
+	background:linear-gradient(180deg,#fff 0%,#fffaf7 100%);
+	color:var(--text);
+	-webkit-font-smoothing:antialiased}
+	
+    a
+	{
+	color:inherit;
+	text-decoration:none
+	}
+	
+    .container
+	{
+	max-width:var(--container);
+	margin:0 auto;
+	padding:0 20px
+	}
+	
+   header 
+   {
+   <!-- background-image: url("C:/Users/Shubhi/Downloads/b1A/b1.png");-->
+    top: 16px;
+    z-index: 40;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand img {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 6px 20px rgba(255, 106, 0, 0.18);
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    font-weight: 600;
+    color: var(--text);
+    opacity: 0.92;
+}
+
+.cta {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    padding: 10px 16px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.hero 
+{
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 40px;
+    align-items: center;
+    <!--background-image: url("C:/Users/Shubhi/Downloads/b1A/b1.png");-->
+    padding: 48px 0;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-left h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    margin: 0 0 14px;
+}
+
+.hero-left p {
+    margin: 20px;
+    text-align: left;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+}
+
+section {
+    padding: 64px 0;
+}
+
+h2.section-title {
+    font-size: 26px;
+    margin: 0 0 18px;
+}
+
+footer {
+    padding: 28px 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+    /* ===== OUR BRANDS CAROUSEL ===== */
+    .brands-section {
+      width: 100%;
+      background: linear-gradient(90deg, #ff4e00, #ec9f05);
+      padding: 60px 0;
+    }
+    .swiper {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .swiper-slide img {
+      width: 150px;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      background: white;
+      padding: 10px;
+    }
+    .swiper-slide img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: white;
+    }
+
+    /* Gallery grid */
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .gallery-section {
+      width: 100%;
+     <!-- background: linear-gradient(90deg, #fff8f4, #fffaf7);-->
+      padding: 60px 0;
+    }
+
+    .gallerySwiper {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallerySwiper .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallerySwiper img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .gallerySwiper img:hover {
+      transform: scale(1.05);
+    }
+
+    .swiper-pagination-bullet {
+      background: #ddd;
+      opacity: 0.8;
+    }
+    .swiper-pagination-bullet-active {
+      background: var(--accent1);
+    }
+
+    .gallerySwiper .swiper-button-next,
+    .gallerySwiper .swiper-button-prev {
+      color: var(--accent1);
+    }
+
+    /* Chatbot styling */
+    #chatbot-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      font-family: 'Poppins', sans-serif;
+    }
+    #chatbot-icon {
+      background: linear-gradient(135deg, #ff4b2b, #ff8c00);
+      color: white;
+      font-size: 24px;
+      padding: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    #chatbot-icon:hover {
+      transform: scale(1.1);
+    }
+    #chatbot-box {
+      display: none;
+      flex-direction: column;
+      width: 320px;
+      height: 400px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    #chatbot-box.active {
+      display: flex;
+    }
+    #chatbot-header {
+      background: linear-gradient(135deg, #ff4b2b, #ff8c00);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+    #chatbot-messages {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .chat-msg {
+      margin: 5px 0;
+      padding: 8px 10px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+    .chat-msg.user {
+      background: #ff8c00;
+      color: white;
+      align-self: flex-end;
+    }
+    .chat-msg.bot {
+      background: #f0f0f0;
+      align-self: flex-start;
+    }
+    #chatbot-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+    #chatbot-input input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      outline: none;
+    }
+    #chatbot-input button {
+      background: #ff4b2b;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    #chatbot-input button:hover {
+      background: #ff8c00;
+    }
+
+    /* Dropdown Styles */
+    nav ul li {
+      position: relative;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      padding: 10px 0;
+      list-style: none;
+      margin: 0;
+      min-width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      z-index: 999;
+      pointer-events: auto;
+    }
+    .dropdown-menu li {
+      padding: 0;
+    }
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 18px;
+      color: var(--text);
+      font-weight: 500;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .dropdown-menu a:hover {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+      border-radius: 4px;
+    }
+    .dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+    nav ul li:hover > a {
+      color: var(--accent1);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <div class="nav">
+      <div class="brand">
+        <img src="images/aalogo.png" alt="Aeron Agencies Logo" />
+        <div>
+          <div style="font-weight:800">Aeron Agencies</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:2px">Paints, Tools & Hardware</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="aeronagencies.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="#">Products ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="industrial-paints.html">Industrial Paints</a></li>
+              <li><a href="cutting-tools.html">Cutting Tools</a></li>
+              <li><a href="hand-tools.html">Hand Tools</a></li>
+			  <li><a href="magnetic-drill.html">Magnetic Drill Machines</a></li>
+			  <li><a href="annular-cutters.html">TCT Annular Cutters</a></li>
+              <li><a href="decorative-paints.html">Decorative Paints</a></li>
+              <li><a href="old-cloth.html">Old Cloth</a></li>
+              <li><a href="safety-equipments.html">Safety Equipments</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+	  
+       <!-- <a class="cta" href="#contact">Get in touch</a> -->
+    </div>
+  </header>
+  <!-- ===== OUR BRANDS CAROUSEL SECTION ===== -->
+  
+  <!-- Main class containing BRANDS , CONTACTS ETC. -->
+  
+  <!-- BRANDS -->
+  
+  <main class="container">
+    <section id="home" class="hero">
+	
+      <div class="hero-left">
+		
+        <h1>Your Trusted Source for Quality Paints, Tools & Industrial Hardware.</h1>
+        <div class="hero-actions">
+         <!-- <a class="cta" href="https://api.whatsapp.com/" target="_blank">Let's talk</a>
+		  
+          -- <a href="#portfolio" style="align-self:center;padding:10px 14px;border-radius:10px;background:#fff;border:1px solid rgba(0,0,0,0.06);font-weight:700">View portfolio</a>
+ -->      
+	   </div>
+      </div>
+      <div class="hero-right">
+        <img src="images/home.png" alt="showcase" style="width:100%;height:360px;object-fit:cover;border-radius:12px">
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== OUR BRANDS CAROUSEL SECTION ===== -->
+  
+  <!-- Main class containing BRANDS , CONTACTS ETC. -->
+  
+  <!-- BRANDS -->
+ <main class="container">
+  <h2 class="section-title">Our Brands</h2>
+  <section id="gallery" class="brands-section">
+  
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+		
+        <div class="swiper-slide"><img src="images/addison logo.jpg" alt="Addison"></div>
+        <div class="swiper-slide"><img src="images/asianpaintsppg.jpg" alt="Asian Paints PPG"></div>
+        <div class="swiper-slide"><img src="images/bds.jpg" alt="BDS Maschinen"></div>
+        <div class="swiper-slide"><img src="images/metdrill.jpg" alt="Metdrill"></div>
+        <div class="swiper-slide"><img src="images/venus.jpg" alt="Venus"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  
+  <!-- GALLERY -->
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">Gallery</h2>
+      <div class="swiper gallerySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/drills.jpg" alt="Industrial Tools and Drills"></div>
+          <div class="swiper-slide"><img src="images/industrial-paints-1000x1000.png" alt="Industrial Paints"></div>
+          <div class="swiper-slide"><img src="images/metal-painting.jpg" alt="Metal Surface Painting"></div>
+          <div class="swiper-slide"><img src="images/broachcutter.jpg" alt="Broach Cutter"></div>
+          <div class="swiper-slide"><img src="images/MABasic-35-basic.jpg" alt="MABasic-35-basic"></div>
+          <div class="swiper-slide"><img src="images/MABasic-50-new-magnetic-drill.jpg" alt="MABasic-50-new-magnetic-drill"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+<!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title"><a href="contact.html">Contact</a></h2>
+	  
+      <p>Email: <a href="mailto:shivamaeron24@gmail.com">shivamaeron24@gmail.com</a></p>
+      <p>Phone: 
+        <a href="tel:+919996890138">9996890138</a>, 
+        <a href="tel:+919467631828">9467631828</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>© Aeron Agencies — All rights reserved.</div>
+      <div style="color:var(--muted)"></div>
+    </div>
+  </footer>
+
+  <!-- Swiper Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: { delay: 2000, disableOnInteraction: false },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        600: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+
+    var gallerySwiper = new Swiper(".gallerySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: { delay: 2500, disableOnInteraction: false },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 },
+      },
+    });
+  </script>
+
+  <!-- Chatbot Section 
+  <div id="chatbot-container">
+    <div id="chatbot-icon">💬</div>
+    <div id="chatbot-box">
+      <div id="chatbot-header">Aeron Assistant</div>
+      <div id="chatbot-messages"></div>
+      <div id="chatbot-input">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </
+  
+  
+  -->
